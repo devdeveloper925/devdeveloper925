@@ -1,0 +1,96 @@
+@media screen and (min-width:300px) and (max-width:1500px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+    }
+
+}
+
+body {
+    display: flex;
+    background-image:url(gb5.jpg) ;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    padding: 80px 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(99, 26, 26);
+    background-image: url(pesona.png);
+    background-size: cover;
+    background-position: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 15px 25px;
+    transition: all .5s ease;
+}
+
+.navbar a:hover {
+    color: rgb(5, 5, 5);
+    border: 1px solid white;
+    background-color: aliceblue;
+    padding-right: 16px;
+}
+
+.logo {
+
+    font-size: 33px;
+    color:aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default;
+} /* membuat animasi text*/
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color:red;
+    }
+}
+
+.animated-text {
+    animation: colorChange 2s infinite;
+    display: inline-block;
+}
+.background-img{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+   
+}
+.penjelasan{
+    padding:0px 10px;
+    background-color:rgb(177, 175, 175);
+}
+
+.adat{
+    padding: 0 10px;
+    background-color: rgb(247, 218, 218);  
+}
